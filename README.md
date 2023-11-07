@@ -12,8 +12,6 @@ pip install -r requirements.txt
 ```
 We recommend to use /Python=3.8 /torch=1.10.1 /torchvision=0.11.2 /timm=0.6.13 /cuda==11.3 /faiss-gpu=1.7.2/ 24G RTX 3090 or RTX 4090 for training and evaluation. If you find some packages are missing, please install them manually. 
 
-We trained the CC-Res on two RTX 3090.
-
 ### Prepare Datasets
 
 ```bash
@@ -56,20 +54,13 @@ data
 Please download pre-trained models and put them into your custom file path.
 
 ## Examples
-
-### ResNet-50
-`cd cluster-contrast-reid-res`  
-`sh train.sh`
-
-
 ### ViT
-`cd cluster-contrast-reid-vit`
 `sh train.sh`
 
 
 ## ReID performance
 
-We have reproduced the performance to verify the reproducibility. The reproduced results may have a gap of about 1.0% with the numbers in the paper.
+We have reproduced the performance to verify the reproducibility. The reproduced results may have a gap of about 0.5% with the numbers in the paper.
 
 
 ### USL ReID
@@ -77,14 +68,14 @@ We have reproduced the performance to verify the reproducibility. The reproduced
 ##### Market-1501
 | Model         | Image Size| mAP/Rank-1 | Download |
 | :------:      | :------: |:------: |:------: |
-| ViT-S/16      | 256*128 |88.6/94.9 |[model](https://drive.google.com/file/d/1tyrTpv63HO7tSPnouqR55i9w0RdR7Nai/view?usp=drive_link)| 
+| ViT-S/16      | 256*128 |88.6/94.9 |[model](https://drive.google.com/file/d/10i9QuBjBh0EptMG-qfNg5bszUmLGPL-P/view?usp=drive_link)| 
 <!-- | ResNet-50     | 256*128 |86.9/94.5 |[model](https://drive.google.com/file/d/1A6iJvceDFLlLGL4WvqYQOYGuD1Hh8ico/view?usp=drive_link)|   -->
 
 
 ##### MSMT17
 | Model         | Image Size| mAP/Rank-1 | Download |
 | :------:      | :------: |:------: |:------: |
-| ViT-S/16      | 256*128 |48.9/74.2 |[model](https://drive.google.com/file/d/1_TMM5tCedV-kFw1736nrh2Z8shEWO-OL/view?usp=drive_link)| 
+| ViT-S/16      | 256*128 |48.9/74.2 |[model](https://drive.google.com/file/d/184UInegSJxZWy5tWFnkG08NO__LQMTGe/view?usp=drive_link)| 
 <!-- | ResNet-50     | 256*128 |55.9/78.8 |[model](https://drive.google.com/file/d/1vt56YNLnciFr8A94Hhq95N9AVbkbdDGv/view?usp=drive_link)| -->
 
 <!-- 
